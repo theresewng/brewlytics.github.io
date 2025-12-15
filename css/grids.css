@@ -1,66 +1,66 @@
 /* Media Queries */
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
 
-    .panel {
-        padding: 4rem 1.5rem 6rem 1.5rem; /* Extra padding for bottom nav */
-        min-height: auto; /* Let content determine height on mobile */
-        justify-content: flex-start;
-        height: auto; /* Ensure height is auto */
-    }
-    
-    /* STACKING LOGIC: This fixes the layout on mobile */
-    .grid-2-col {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
+   .panel {
+      padding: 4rem 1.5rem 6rem 1.5rem;
+      min-height: auto;
+      justify-content: flex-start;
+      height: auto;
+   }
 
-    /* Stack legacy flex layouts */
-    .intro-layout, 
-    .currently-open-layout,
-    .cuisine-row-2, 
-    .cafes-inline, 
-    .lifespan-layout, 
-    .gap-inline,
-    .econ2-top-row,
-    .cb-top-row,
-    .siu-bottom-row,
-    .conclusion-bottom-row {
-        flex-direction: column !important;
-        align-items: flex-start;
-    }
-    
-    .intro-layout {
-        flex-direction: column-reverse !important;
-    }
+   .grid-2-col {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+   }
 
-    /* Mobile Navigation: 4 rows of 4 columns */
-    .nav-grid {
+   .intro-layout,
+   .currently-open-layout,
+   .cuisine-row-2,
+   .cafes-inline,
+   .lifespan-layout,
+   .gap-inline,
+   .econ2-top-row,
+   .cb-top-row,
+   .siu-bottom-row,
+   .conclusion-bottom-row {
+      flex-direction: column !important;
+      align-items: flex-start;
+   }
+
+   .intro-layout {
+      flex-direction: column-reverse !important;
+   }
+
+   .nav-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 8px;
-    }
+   }
 
-    .nav-item {
-      height: 6px; 
-    }
-    
-    /* Typography sizing for mobile */
-    .h1-title {
-        font-size: 2.5rem;
-    }
-    
-    h2 { font-size: 1.8rem; }
-    h3 { font-size: 1.2rem; }
+   .nav-item {
+      height: 6px;
+   }
 
-    /* Embed sizing */
-    .visualisation-container svg {
-        height: auto;
-        width: 100%;
-    }
-    
-    .tableauPlaceholder {
-        height: 500px !important;
-    }
+   .h1-title {
+      font-size: 2.5rem;
+   }
+
+   h2 {
+      font-size: 1.8rem;
+   }
+
+   h3 {
+      font-size: 1.2rem;
+   }
+
+   .visualisation-container svg {
+      height: auto;
+      width: 100%;
+   }
+
+   .tableauPlaceholder {
+      height: 500px !important;
+   }
 }

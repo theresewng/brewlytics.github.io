@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vancouver Restaurant Analysis</title>
+  <title>IAT 355: Vancouver Restaurant Analysis</title>
 
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/grids.css" />
@@ -17,7 +17,6 @@
 </head>
 
 <!-- Source to Scroll Snapping Inspiration: https://codepen.io/GreenSock/pen/YzyaKrq -->
-
 <body>
   <div class="container">
 
@@ -36,11 +35,11 @@
     <!-- 2. HISTORY MAP -->
     <section id="map-history">
       <div class="panel">
-        <div class="panel-inner" style="text-align: center; max-width: 1200px;">
-          <h2>The Growth of a <span class="highlight">Culinary City</span></h2>
+        <div class="panel-inner">
+          <h2>The Growth of a <span class="highlight-green">Culinary City</span></h2>
           <h3>Watch how restaurant licenses have populated the city over the last decade.</h3>
         </div>
-        <div class="visualisation-container" style="margin-top: 2rem;">
+        <div class="visualisation-container">
           <div class="flourish-embed flourish-map" data-src="visualisation/26266848"></div>
           <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
@@ -51,10 +50,9 @@
     <section id="intro">
       <div class="panel intro dark-panel">
         <div class="grid-2-col intro-layout">
-
           <div class="intro-text-left">
             <h2>
-              In 2020, there were <span style="color: #FFCCBC; font-size: 1.2em;">715</span> food-and-beverage
+              In 2020, there were <span class="highlight">715</span> food-and-beverage
               businesses.
             </h2>
             <h3>
@@ -64,7 +62,7 @@
                   target="_blank">(Daily
                   Hive)</a></span>
             </h3>
-            <h3 style="margin-top: 3rem; font-weight: 600; border-left: 4px solid #FFCCBC; padding-left: 1rem;">
+            <h3>
               Yet in July 2025, the <a class="a-alt"
                 href="https://vancouversun.com/life/food/why-vancouver-restaurants-are-struggling-and-what-you-can-do-to-help"
                 target="_blank">Vancouver Sun</a> reported that a lack of customers is causing strain to the industry.
@@ -74,7 +72,6 @@
           <!-- Got help creating the pie chart here: https://copyicon.com/generator/svg-pie-chart -->
           <div class="visualisation-container">
             <svg version="1.1"
-              style="font-family: Roboto; font-size: 12px; max-width: 100%; filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));"
               xmlns="http://www.w3.org/2000/svg" width="650" height="400" viewBox="0 0 650 400" aria-hidden="false"
               aria-label="Interactive chart">
               <defs aria-hidden="true">
@@ -91,20 +88,20 @@
                   <path fill="#94d13d"
                     d="M 314.9706710586679 43.50000298675974 A 144 144 0 1 1 274.62338525636073 325.72347478573863 L 274.9037784143027 324.76358954417105 A 143 143 0 1 0 314.9708747318716 44.50000296601837 Z"
                     data-z-index="-1" fill-opacity="0.25" visibility="hidden"></path>
-                  <path fill="rgb(148,209,61)"
+                  <path fill="#46413B"
                     d="M 314.9706710586679 43.50000298675974 A 144 144 0 1 1 274.62338525636073 325.72347478573863 L 288.75520041663447 277.3452586107301 A 93.6 93.6 0 1 0 314.98093618813414 93.90000194139384 Z"
                     transform="translate(0,0)" stroke="#ffffff" stroke-width="1" opacity="1" stroke-linejoin="round"
                     tabindex="-1" role="img" aria-label="Quick Service Eateries, 54." style="outline: none;"></path>
-                  <path fill="rgb(111,88,233)"
+                  <path fill="#53282A"
                     d="M 274.48518199291794 325.68302906599286 A 144 144 0 0 1 171.4673995894538 199.09278307338138 L 221.703809733145 195.03530899769788 A 93.6 93.6 0 0 0 288.66536829539666 277.3189688928953 Z"
                     transform="translate(0,0)" stroke="#ffffff" stroke-width="1" opacity="1" stroke-linejoin="round"
                     tabindex="-1" role="img" aria-label="Full Service/Sit Down Restaurants, 19." style="outline: none;">
                   </path>
-                  <path fill="rgb(45,153,254)"
+                  <path fill="#FBE3A3"
                     d="M 171.4558785746068 198.94924470050188 A 144 144 0 0 1 222.29996638607855 77.30606292550469 L 254.74497815095106 115.87394090157805 A 93.6 93.6 0 0 0 221.6963210734944 194.94200905532622 Z"
                     transform="translate(0,0)" stroke="#ffffff" stroke-width="1" opacity="1" stroke-linejoin="round"
                     tabindex="-1" role="img" aria-label="Retailer Dealers, 15." style="outline: none;"></path>
-                  <path fill="rgb(185,244,168)"
+                  <path fill="#7A8686"
                     d="M 222.4102066548004 77.21341800430469 A 144 144 0 0 1 314.7999868889177 43.5001389071663 L 314.8699914777965 93.90009028965811 A 93.6 93.6 0 0 0 254.81663432562024 115.81372170279805 Z"
                     transform="translate(0,0)" stroke="#ffffff" stroke-width="1" opacity="1" stroke-linejoin="round"
                     tabindex="-1" role="img" aria-label="Liquor Businesses, 11." style="outline: none;"></path>
@@ -119,16 +116,16 @@
                   aria-hidden="true"></text>
                 <g data-z-index="6" opacity="1" transform="translate(10,10) scale(1 1)" aria-hidden="true"
                   style="cursor: pointer;">
-                  <path fill="none" stroke="#94d13d" stroke-width="1"
+                  <path fill="none" stroke="#46413B" stroke-width="1"
                     d="M 492.22893088728233 212.26278185955158 C 487.22893088728233 212.26278185955158 469.41214493342557 209.70111477063244 463.47321628213996 208.84722574099274 L 457.53428763085435 207.99333671135304"
                     opacity="1"></path>
-                  <path fill="none" stroke="#6f58e9" stroke-width="1"
+                  <path fill="none" stroke="#53282A" stroke-width="1"
                     d="M 174.95051521323433 297.21616407270693 C 179.95051521323433 297.21616407270693 193.92115157048596 285.86621606518554 198.5780303562365 282.0829000626784 L 203.23490914198703 278.29958406017124"
                     opacity="1"></path>
-                  <path fill="none" stroke="#2d99fe" stroke-width="1"
+                  <path fill="none" stroke="#FBE3A3" stroke-width="1"
                     d="M 149.5103528258028 120.27594812939566 C 154.5103528258028 120.27594812939566 171.11273011968532 127.23016039187195 176.6468558843128 129.54823114603073 L 182.18098164894027 131.8663019001895"
                     opacity="1"></path>
-                  <path fill="none" stroke="#b9f4a8" stroke-width="1"
+                  <path fill="none" stroke="#CFCBC9" stroke-width="1"
                     d="M 250.48849506133365 23.993483983251927 C 255.48849506133365 23.993483983251927 261.6448576411957 40.90795115739827 263.6969785011497 46.546106882113726 L 265.74909936110373 52.18426260682918"
                     opacity="1"></path>
                   <g data-z-index="1" style="cursor: pointer;" transform="translate(497,202)" opacity="1"><text
@@ -154,10 +151,7 @@
                     </text></g>
                 </g>
             </svg>
-
           </div>
-
-
         </div>
       </div>
     </section>
@@ -190,11 +184,14 @@
     <!-- 5. CUISINE -->
     <section id="cuisine">
       <div class="panel cuisine-panel">
-        <div class="panel-inner"
-          style="width: 100%; max-width: 1400px; display: flex; flex-direction: column; align-items: flex-start;">
+        <div class="panel-inner">
           <h3>Looking at the current landscape by cuisine type.</h3>
 
-          <div id="visualisation-container">
+          <div class="visualisation-container">
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26432538">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+            <!-- <div id="visualisation-container">
             <div id="observablehq-cuisine-bfc379f4"></div>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
             <script type="module">
@@ -204,11 +201,12 @@
                 if (name === "cuisine") return new Inspector(document.querySelector("#observablehq-cuisine-bfc379f4"));
               });
             </script>
+          </div> -->
           </div>
 
-          <div class="cuisine-center-text" style="max-width: 900px; margin-top: 2rem;">
+          <div class="cuisine-center-text">
             <h3>
-              One category clearly dominates: <span class="highlight">Japanese restaurants.</span>
+              One category clearly dominates: <span class="highlight-green">Japanese restaurants.</span>
             </h3>
             <h3>
               In 2022, <a
@@ -224,7 +222,7 @@
     <!-- 6. CAFES -->
     <section id="cafes">
       <div class="panel">
-        <div class="panel-inner" style="max-width: 1000px; text-align: left;">
+        <div class="panel-inner">
           <h3>Another notable category is cafés.</h3>
 
           <div class="visualisation-container">
@@ -235,12 +233,10 @@
 
           <h3>
             Kings of the Vancouver Coffee Scene, The Piccolo brothers, who are best known for cafes such as <span
-              class="highlight">Caffe Artigiano and 49th Parallel Coffee</span>, and have helped to make specialty
+              class="highlight-green">Caffe Artigiano and 49th Parallel Coffee</span>, and have helped to make specialty
             coffee a major part of the city’s
             identity since 2004
           </h3>
-          <!-- <p class="caption">There's also <i>allegedly</i> some drama with the Piccolo brothers but that is not my story
-            to tell.</p> -->
         </div>
       </div>
     </section>
@@ -264,21 +260,9 @@
               Japanese restaurants are everywhere, but they tend to stay open for <span class="highlight-red">less
                 time</span> on average. <span class="highlight-green">Italian restaurants, although fewer, actually have
                 longer lifespans.</span>
-
             </h3>
           </div>
           <div class="lifespan-viz">
-            <!-- <div id="visualisation-container">
-              <div id="observablehq-yearsOpened-3a152a05"></div>
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-              <script type="module">
-                import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-                import define from "https://api.observablehq.com/d/9a6d5a860169013f@287.js?v=4";
-                new Runtime().module(define, name => {
-                  if (name === "yearsOpened") return new Inspector(document.querySelector("#observablehq-yearsOpened-3a152a05"));
-                });
-              </script>
-            </div> -->
             <div id="observablehq-conditionals-efc60af6"></div>
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
@@ -299,7 +283,7 @@
     <!-- 9. OVERLAPS -->
     <section id="overlaps">
       <div class="panel">
-        <div class="overlap-inline" style="max-width: 900px;">
+        <div class="overlap-inline">
           <h3>
             Digging deeper, we noticed that several addresses had multiple restaurants open in the same space across
             different years.
@@ -339,10 +323,10 @@
         <h1 class="h1-title">
           So what does this all mean?
         </h1>
-        <h2 style="color: #ffffff; text-align: center; margin-top: 2rem; font-weight: 300;">
-          To understand the bigger picture, we need to look at the intersection of <span
-            style="font-weight: 700;">culture</span>, <span style="font-weight: 700;">economics</span> and <span
-            style="font-weight: 700;">shifting consumer behaviour</span>.
+        <h2 class="h2-light">
+          To understand the bigger picture, we need to look at the intersection of <span class="h2-bold">culture</span>,
+          <span class="h2-bold">economics</span> and
+          <span class="h2-bold">shifting consumer behaviour</span>.
         </h2>
       </div>
     </section>
@@ -379,43 +363,29 @@
     <section id="economics">
       <div class="panel economics-panel">
         <div class="grid-2-col">
-          <div class="econ-img-wrapper">
-            <img src="img/15.png" alt="Economics illustration" class="econ-img">
-          </div>
           <div class="econ-text">
             <h3>
               Economics is another factor. Japanese restaurants saturate the area, creating competition.
               Contrast this with Italian restaurants, which face less competition and therefore survive longer.
             </h3>
-            <h3 style="margin-top: 1rem;">Oversupply shortens lifespans, while niche restaurants tend to last.</h3>
+            <h3>Oversupply shortens lifespans, while niche restaurants tend to last.</h3>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- 13. ECONOMICS CONTINUED -->
-    <section id="economics-continued">
-      <div class="panel econ2-panel">
-        <div class="econ2-top-row">
-          <div class="econ2-text-main" style="max-width: 900px;">
+          <div>
             <h3>
-              Restaurant rent in Vancouver ranges from $3,500 to $15,000 per month. Cioppino’s closed in 2024 when rent
+              According to Toast, restaurant rent can range from $3,500 to $15,000 per month, or more.</h3>
+            <h3>Cioppino's, a legendary Italian restauarant located in Yaletown, closed in 2024 with one reasoning being
+              because his monthly rent
               hit <span class="highlight-red">$60,000</span>.
               With rising costs in:
             </h3>
-          </div>
-        </div>
 
-        <div class="econ2-bottom" style="margin-top: 2rem;">
-          <div class="grid-2-col">
-            <div class="econ2-list-group">
-              <ul style="font-weight: 700; list-style: none;">
+            <ul><b>
                 <li>↑ Rent</li>
                 <li>↑ Food and ingredients</li>
                 <li>↑ Utilities</li>
                 <li>↑ Labour</li>
-              </ul>
-            </div>
+              </b></ul>
             <h3 class="econ2-bottom-text">
               ...restaurants face tight margins. Combined with competition, these pressures contribute to turnover.
             </h3>
@@ -424,91 +394,74 @@
       </div>
     </section>
 
-    <!-- 14. CONSUMER BEHAVIOUR -->
+    <!-- 13. CONSUMER BEHAVIOUR -->
     <section id="consumer-behaviour">
       <div class="panel cb-panel">
-        <div class="cb-content">
-          <h3>
-            Consumer behaviour has shifted. Chef J-C Poirier notes:
-          </h3>
-          <div class="cb-top-row" style="margin-top: 1rem;">
-            <div class="cb-text-main">
-              <ul style="padding-left: 1.5rem;">
-                <li>Staff shortages force reduced hours</li>
-                <li>Downtown foot traffic has dropped</li>
-                <li>Guests prefer affordable, fast options</li>
-                <li>Dining out is the first expense people cut</li>
-              </ul>
-            </div>
-          </div>
-          <!-- <div class="cb-extra-text" style="margin-top: 1rem;">
+        <div class="grid-2-col">
+
+          <div class="cb-content">
             <h3>
-              Social media builds hype, but novelty wears off. People want good food and value, without being overly
-              challenged.
+              In addition, consumer behaviour has shifted.
             </h3>
-          </div> -->
+
+            <h3>After COVID-19, there has been a staffing shortage, as for "every three people retiring in B.C.", only
+              two workers get hired in its place.
+              In addition, more people are choosing to work from home, leading to a decreased foot traffic Downtown,
+              leading to less people "going out after work for drinks, dinner, or late-night events".
+              Both of these factors together are leading to shorter operating hours.</h3>
+
+            <h3>In addition, a bumpy economy means that people have less spending money, meaning that dining out is the
+              first expense people cut. </h3>
+          </div>
+          <div class="quote">
+            <h2>"The biggest issue is always money."</h2>
+            <p>Robert Belcham, Chef’s Table marketing co-chair</p>
+          </div>
         </div>
-      </div>
     </section>
 
-    <!-- 15. SUMMING IT UP -->
+    <!-- 14. SUMMING IT UP -->
     <section id="summing-it-up">
       <div class="panel siu-panel">
         <div class="siu-content">
           <div class="siu-top">
-            <h3>
-              All in all, the lifespan of restaurants are shaped by three key forces:
-            </h3>
-            <ul>
-              <li><strong>Culture</strong> influences what types open</li>
-              <li><strong>Economics</strong> determines who survives</li>
-              <li><strong>Consumer habits</strong> have changed</li>
-            </ul>
-          </div>
-          <div class="siu-bottom-row">
-            <div class="siu-bottom-text">
-              <h3>
-                Looking at how these three factors interact in a neighbourhood that is constantly shifting is crucial to
-                understanding its success.
-              </h3>
-              <h3>
-                Restaurants open, close, and reopen under new names because the neighbourhood is dynamic, competitive,
-                and
-                evolving, but they are essential to not just themselves, but 27 other key sectors, such as vendors,
-                suppliers, the local food systemm, and even creatives.
-              </h3>
-
-              <h3> The takeaway?</h3>
-
-              <h2>“Support what you want to exist. Spend your money at the places you love.”</h2>
-              <p>Karri Green, Co-Owner at Chambar</p>
-              </ul>
-            </div>
+            <h2 class="h2-light">
+              All in all, the lifespan of restaurants are shaped by three key forces: </h2>
+            <h2 class="h2-boldlight">Culture, Economics, Consumer Habits.</h2>
+            <h2 class="h2-light">
+              How these three factors interact in a neighbourhood that is constantly shifting as much as Downtown
+              Vancouver is crucial to
+              understanding its success.
+            </h2>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 16. CONCLUSION -->
+    <!-- 15. CONCLUSION -->
     <section id="conclusion">
       <div class="panel conclusion-panel">
-
         <div class="conclusion-content">
           <div class="conclusion-top">
 
+            <!-- Source: https://www.w3schools.com/howto/howto_css_dividers.asp -->
+            <h3>
+              Restaurants open, close, and reopen under new names because the neighbourhood is dynamic, competitive,
+              and
+              evolving, but they are essential to not just themselves, but 27 other key sectors, such as vendors,
+              suppliers, the local food systemm, and even creatives.
+            </h3>
 
+            <h3> The takeaway?</h3>
 
+            <h2>“Support what you want to exist. Spend your money at the places you love.”</h2>
+            <p>Karri Green, Co-Owner at Chambar</p>
           </div>
-          <div class="visualisation-container">
-            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26432538">
-              <script src="https://public.flourish.studio/resources/embed.js"></script>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
+    <!-- 16. Sources-->
     <section id="sources">
       <div class="panel">
         <div class="panel-inner">
@@ -517,53 +470,62 @@
           </h3>
           <p><a
               href="https://www.biv.com/news/hospitality-marketing-tourism/soaring-costs-force-vancouver-restaurants-to-close-8751417"
-              target="_blank">Business Intelligence Vancouver: Soaring costs force Vancouver restaurants to close</a></p>
+              target="_blank">Business Intelligence Vancouver: Soaring costs force Vancouver restaurants to close</a>
+          </p>
           <p><a href="https://opendata.vancouver.ca/explore/dataset/business-licences-2013-to-2024/"
               target="_blank">City of Vancouver Open Data Portal</a></p>
-          <p><a href="https://dailyhive.com/vancouver/downtown-vancouver-restaurants-statistics"
-              target="_blank">Daily Hive: Net gain of 77 restaurants in downtown Vancouver since 2012: report</a></p>
+          <p><a href="https://dailyhive.com/vancouver/downtown-vancouver-restaurants-statistics" target="_blank">Daily
+              Hive: Net gain of 77 restaurants in downtown Vancouver since 2012: report</a></p>
           <p><a href="https://dailyhive.com/vancouver/metro-vancouver-visible-minority-population-residents-statistics"
               target="_blank">Daily Hive: Over half of Metro Vancouver residents are now part of a visible minority:
-            statistics</a></p>
+              statistics</a></p>
           <p><a
-              href="https://en.wikipedia.org/wiki/Hidekazu_Tojo#:~:text=Hidekazu%20Tojo%20(%E6%9D%B1%E6%A2%9D%E8%8B%B1%E5%93%A1,roll%20and%20the%20B.C.%20roll."
-              target="_blank">Wikipedia: Hidekazu Tojo</a></p>
-          <p><a              href="https://vancouversun.com/life/food/why-vancouver-restaurants-are-struggling-and-what-you-can-do-to-help"
-              target="_blank">Vancouver Sun: Why Vancouver restaurants are struggling — and what you can do to help
-          </a></p>
+              href="https://pos.toasttab.com/ca/blog/on-the-line/how-much-does-it-cost-to-open-a-restaurant-vancouver?srsltid=AfmBOoqgYtmYt3O6AYFOAhInSpD_HetJ4i_WVdbKK-_ArFtK_LDHmoZy"
+              target="_blank">Toast: How Much Does It Cost to Open a Restaurant in Vancouver? [Restaurant Startup Costs]
+            </a></p>
           <p><a
               href="https://www.vancouverisawesome.com/food-and-drink/were-obsessed-vancouver-named-most-sushi-crazed-city-in-the-world-outside-of-japan-4970488"
               target="_blank">Vancouver is Awesome: We're obsessed: Vancouver named most 'sushi-crazed' city in the
-            world outside of Japan</a>
+              world outside of Japan</a>
           </p>
+          <p><a
+              href="https://vancouversun.com/life/food/why-vancouver-restaurants-are-struggling-and-what-you-can-do-to-help"
+              target="_blank">Vancouver Sun: Why Vancouver restaurants are struggling — and what you can do to help
+            </a></p>
+          <p><a
+              href="https://en.wikipedia.org/wiki/Hidekazu_Tojo#:~:text=Hidekazu%20Tojo%20(%E6%9D%B1%E6%A2%9D%E8%8B%B1%E5%93%A1,roll%20and%20the%20B.C.%20roll."
+              target="_blank">Wikipedia: Hidekazu Tojo</a></p>
+
+          <hr class="solid">
+
           <p>
             Project team: Brewlytics · Course: IAT 355
           </p>
         </div>
       </div>
     </section>
-  </div>
 
-  <div class="navbar">
-    <div class="nav-grid">
-      <div class="nav-item" data-tooltip="Home" data-target="#home"></div>
-      <div class="nav-item" data-tooltip="History Map" data-target="#map-history"></div>
-      <div class="nav-item" data-tooltip="Intro" data-target="#intro"></div>
-      <div class="nav-item" data-tooltip="Currently Open" data-target="#currently-open"></div>
-      <div class="nav-item" data-tooltip="Cuisines" data-target="#cuisine"></div>
-      <div class="nav-item" data-tooltip="Cafes" data-target="#cafes"></div>
-      <div class="nav-item" data-tooltip="Bad News" data-target="#bad-news"></div>
-      <div class="nav-item" data-tooltip="Lifespan" data-target="#average-lifespan"></div>
-      <div class="nav-item" data-tooltip="Overlaps" data-target="#overlaps"></div>
-      <div class="nav-item" data-tooltip="Implications" data-target="#whatdoesitmean"></div>
-      <div class="nav-item" data-tooltip="Asian Pop." data-target="#growing-asian-population"></div>
-      <div class="nav-item" data-tooltip="Economics" data-target="#economics"></div>
-      <div class="nav-item" data-tooltip="Econ Cont." data-target="#economics-continued"></div>
-      <div class="nav-item" data-tooltip="Consumer" data-target="#consumer-behaviour"></div>
-      <div class="nav-item" data-tooltip="Summary" data-target="#summing-it-up"></div>
-      <div class="nav-item" data-tooltip="Conclusion" data-target="#conclusion"></div>
+    <div class="navbar">
+      <div class="nav-grid">
+        <div class="nav-item" data-tooltip="Home" data-target="#home"></div>
+        <div class="nav-item" data-tooltip="History Map" data-target="#map-history"></div>
+        <div class="nav-item" data-tooltip="Intro" data-target="#intro"></div>
+        <div class="nav-item" data-tooltip="Currently Open" data-target="#currently-open"></div>
+        <div class="nav-item" data-tooltip="Cuisines" data-target="#cuisine"></div>
+        <div class="nav-item" data-tooltip="Cafes" data-target="#cafes"></div>
+        <div class="nav-item" data-tooltip="Bad News" data-target="#bad-news"></div>
+        <div class="nav-item" data-tooltip="Lifespan" data-target="#average-lifespan"></div>
+        <div class="nav-item" data-tooltip="Overlaps" data-target="#overlaps"></div>
+        <div class="nav-item" data-tooltip="Implications" data-target="#whatdoesitmean"></div>
+        <div class="nav-item" data-tooltip="Asian Pop." data-target="#growing-asian-population"></div>
+        <div class="nav-item" data-tooltip="Economics" data-target="#economics"></div>
+        <div class="nav-item" data-tooltip="Consumer" data-target="#consumer-behaviour"></div>
+        <div class="nav-item" data-tooltip="Summary" data-target="#summing-it-up"></div>
+        <div class="nav-item" data-tooltip="Conclusion" data-target="#conclusion"></div>
+        <div class="nav-item" data-tooltip="Sources" data-target="#sources"></div>
+
+      </div>
     </div>
-  </div>
 
 </body>
 <script src="main.js" type="text/javascript"></script>

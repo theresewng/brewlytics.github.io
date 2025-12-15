@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 html, body {
@@ -14,11 +15,14 @@ html, body {
 :root {
     --bg-color: #F6F1EE;
     --text-main: #323233;
-    --accent-teal: #708478; /* Original teal */
+    --accent-teal: #708478; 
     --accent-dark: #31423c; 
-    --text-red: #53282A;
-    --accent-warning: #D9534F; /* New contrasting color for bad news/emphasis */
-    --accent-highlight: #E67E22; /* Another option for highlights, maybe orange-ish */
+    --text-red: #461020;
+}
+
+hr.solid {
+  border-top: 0.1rem solid #323233;
+  max-width: 80vw;
 }
 
 /* Panels */
@@ -35,11 +39,11 @@ html, body {
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Reduced gap slightly to pack content better */
+  gap: 1rem;
   padding: 2rem 5%; 
   justify-content: center;
   position: relative;
-  opacity: 0; /* For animation */
+  opacity: 0; 
   animation: fadeIn 1s ease-out forwards;
 }
 
@@ -52,7 +56,7 @@ html, body {
 .panel-inner {
   margin: 0 auto;
   padding: 0 3rem;
-  width: 100vw; 
+  width: 90vw; 
   max-width: 1400px;
 }
 
@@ -67,46 +71,64 @@ html, body {
   padding-top: 0;
   color: #ffffff;
   margin: 0 auto;
-  /* text-shadow: 2px 2px 4px rgba(0,0,0,0.1); */
 }
 
 h2 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
-  font-size: clamp(2rem, 5vw, 3.5rem); /* Bigger H2 */
+  font-size: 2rem;
   color: var(--accent-dark);
   margin-bottom: 0.8rem;
-  /* line-height: 1.1; */
-  /* letter-spacing: -0.01em; */
+}
+
+.h2-light{
+  color: var(--bg-color);
+  text-align: center; 
+  margin-top: 2rem; 
+  font-weight: 300;
+}
+
+.h2-bold{
+  font-weight: 600;
+}
+
+.h2-boldlight{
+  color: var(--bg-color);
+  text-align: center; 
+  margin-top: 2rem; 
+  font-weight: 700;
+}
+
+.quote{
+  margin-left: 7rem;
 }
 
 h3 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem); /* Bigger body text */
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem); 
   color: var(--text-main);
-  /* line-height: 1.4; */
-  max-width: 70ch; /* Slightly wider for less empty vertical space */
+  max-width: 70ch; 
+  margin-top: 1rem;
 }
 
 /* List Styling */
 ul, li {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.3rem; /* Bigger list items */
+  font-size: 1.3rem;
   color: var(--text-main);
-  /* line-height: 1.5; */
+  line-height: 1.5;
   margin-bottom: 0.5rem;
   padding-left: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 .highlight {
-    color: var(--accent-teal);
+    color: #020003;
     font-weight: 800;
 }
 
 .highlight-red {
-    color: var(--text-red);
+    color: #461020;
     font-weight: 800;
 }
 
@@ -164,7 +186,6 @@ a{
     gap: 3rem;
     align-items: center;
     width: 100%;
-    /* max-width: 1600px;  */
     margin: 0 auto;
 }
 
@@ -172,11 +193,15 @@ a{
 #visualisation-container, .visualisation-container, svg {
   align-content: center;
   width: 100%;
-  max-width: 1400px; /* Wider visuals */
+  max-width: 1400px; 
   height: auto;
   margin: 1rem auto;
   display: flex;
   justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem; 
 }
 
 .flourish-embed, .tableauPlaceholder {
@@ -187,10 +212,9 @@ a{
 .navbar {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   padding: 8px;
   z-index: 100;
-  /* background-color: rgba(246, 241, 238, 0.95); */
   backdrop-filter: blur(8px);
 }
 
@@ -198,7 +222,8 @@ a{
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   gap: 6px;
-  max-width: 1400px;
+  max-width: 100vw;
+  /* max-width: 1400px; */
   margin: 0 auto;
 }
 
@@ -252,7 +277,7 @@ a{
   text-align: center;
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
-  color: var(--text-main);
+  color: #020003;
   font-weight: 500;
   animation: bounce 2s infinite;
 }
@@ -263,13 +288,23 @@ a{
   60% {transform: translateY(-5px);}
 }
 
-#intro .panel, #whatdoesitmean .panel {
+#intro .panel, #whatdoesitmean .panel, #bad-news .panel, #summing-it-up{
   background-color: var(--accent-teal);
 }
 
-/* Bad News - Different Color */
-#bad-news .panel {
-    background-color: var(--accent-teal); /* Use the warning color */
+#economics .panel{
+  justify-content: center;  
+  align-items: center;       
+}
+
+#economics .grid-2-col {
+  align-items: start;      
+}
+
+#sources .panel-inner {
+  align-items: start;    
+  padding-left: -1rem;  
+  max-width: 100vw;
 }
 
 /* Images */
