@@ -22,8 +22,8 @@ html, body {
 
 hr.solid {
   border-top: 0.1rem solid #323233;
-  max-width: 90vw;
-  justify-content: left;
+  max-width: 85vw;
+  align-content:start
 }
 
 /* Panels */
